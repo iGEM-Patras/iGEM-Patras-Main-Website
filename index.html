@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iGEM Patras 2026 - Synthetic Biology for Better Health</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <picture>
+                    <source srcset="pics/logo.png" type="image/png">
+                    <img src="logo.svg" alt="iGEM Patras Logo" class="navbar-logo">
+                </picture>
+                <h1>iGEM Patras 2026</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" data-en="Home" data-el="Αρχική">Αρχική</a></li>
+                <li><a href="#about" data-en="About" data-el="Σχετικά">Σχετικά</a></li>
+                <li><a href="#projects" data-en="Projects" data-el="Έργα">Έργα</a></li>
+                <li><a href="#achievements" data-en="Achievements" data-el="Επιτεύγματα">Επιτεύγματα</a></li>
+                <li><a href="#contact" data-en="Contact" data-el="Επικοινωνία">Επικοινωνία</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <button id="themeToggleBtn" class="theme-btn" title="Toggle dark/light mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="langToggleBtn" class="lang-btn" title="Toggle English/Greek">
+                    <span>EN</span>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-center">
+                <picture>
+                    <source srcset="pics/logo.png" type="image/png">
+                    <img src="logo.svg" alt="iGEM Patras 2026 Logo" class="hero-logo">
+                </picture>
+                <h2>iGEM Patras 2026</h2>
+                <p data-en="Multidisciplinary student team" data-el="Διεπιστημονική φοιτητική ομάδα">Διεπιστημονική φοιτητική ομάδα</p>
+                <p class="subtitle" data-en="Creating innovative solutions through Synthetic Biology" data-el="Δημιουργώντας καινοτόμες λύσεις μέσω Συνθετικής Βιολογίας">Δημιουργώντας καινοτόμες λύσεις μέσω Συνθετικής Βιολογίας</p>
+                <button class="cta-button" onclick="scrollToSection('about')" data-en="Learn More" data-el="Μάθε Περισσότερα">Μάθε Περισσότερα</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="about" class="section introduction">
+        <div class="container">
+            <h2>Σχετικά με εμάς</h2>
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h3>Η ομάδα μας</h3>
+                    <p>Η iGEM Patras 2026 αποτελεί μια διεπιστημονική φοιτητική ομάδα που δραστηριοποιείται στον τομέα της Συνθετικής Βιολογίας, αποτελούμενη από προπτυχιακούς και μεταπτυχιακούς φοιτητές. Έδρα της ομάδας είναι το Εργαστήριο Φαρμακογονιδιωματικής και Εξατομικευμένης Θεραπείας του Τμήματος Φαρμακευτικής, με κύριους επιστημονικούς υπευθύνους τον Κ. Πατρινό και τον Κ. Λαγουμιτζή.</p>
+                    
+                    <p>Στόχος της ομάδας είναι η βελτίωση της ποιότητας ζωής μέσω της ανάπτυξης καινοτόμων και εφαρμόσιμων λύσεων, αξιοποιώντας σύγχρονες μεθοδολογίες της Συνθετικής Βιολογίας για την αντιμετώπιση προκλήσεων στον τομέα της υγείας και του περιβάλλοντος.</p>
+
+                    <p>Μέσα από το ερευνητικό της έργο, επιδιώκει να ανταποκριθεί με ανθρωποκεντρική προσέγγιση στα σύγχρονα ζητήματα. Η ερευνητική και εκπαιδευτική δραστηριότητα της ομάδας κορυφώνεται με τη συμμετοχή της στον παγκόσμιο διαγωνισμό iGEM, ο οποίος πραγματοποιείται στο τέλος κάθε έτους.</p>
+                </div>
+                <div class="intro-highlights">
+                    <img src="pics/team.jpg" alt="iGEM Patras Team" class="team-image">
+                    <div class="intro-cards">
+                        <div class="highlight-card">
+                            <i class="fas fa-users"></i>
+                            <h4>Διεπιστημονική Ομάδα</h4>
+                            <p>10 μέλη από διάφορα τμήματα</p>
+                        </div>
+                        <div class="highlight-card">
+                            <i class="fas fa-microscope"></i>
+                            <h4>Συνθετική Βιολογία</h4>
+                            <p>Καινοτόμες λύσεις για υγεία</p>
+                        </div>
+                        <div class="highlight-card">
+                            <i class="fas fa-globe"></i>
+                            <h4>Παγκόσμιος Διαγωνισμός</h4>
+                            <p>Συμμετοχή στο iGEM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Synthetic Biology Info -->
+    <section class="section synthetic-bio">
+        <div class="container">
+            <h2>Τι είναι η Συνθετική Βιολογία;</h2>
+            <div class="bio-content">
+                <p>Η Συνθετική Βιολογία συνδυάζει αρχές της Βιολογίας, της Μηχανικής, της Χημείας, της Γενετικής και της Επιστήμης των Υπολογιστών. Απώτερος στόχος της είναι ο σχεδιασμός νέων βιολογικών μελών, συσκευών και συστημάτων, ή και ο επανασχεδιασμός προϋπάρχοντων βιολογικών συστημάτων.</p>
+
+                <p>Τα συστήματα αυτά δημιουργούνται με τέτοιο τρόπο ώστε να είναι κατά το δυνατόν προβλέψιμα, αποτελεσματικά και εύρωστα. Σε αντίθεση με τη Γενετική Μηχανική, η Συνθετική Βιολογία αντιμετωπίζει ολιστικά συστήματα, μονοπάτια, δίκτυα και οργανισμούς διενεργώντας ποσοτικούς και ποιοτικούς ελέγχους και προσαρμογές.</p>
+
+                <p>Η Συνθετική Βιολογία βρίσκει ένα συνεχώς διευρυνόμενο φάσμα εφαρμογών, από τη Βιοϊατρική και την Οικολογία μέχρι τη μόδα και τη Διαστημική Βιολογία. Οι δυνατότητες είναι απεριόριστες και τα όρια τα θέτουν μόνο η Βιοηθική και η φαντασία μας.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About iGEM Competition -->
+    <section class="section igem-competition">
+        <div class="container">
+            <h2>Σχετικά με τον iGEM Διαγωνισμό</h2>
+            <div class="competition-content">
+                <p>Αποτελεί τον μεγαλύτερο διαγωνισμό συνθετικής βιολογίας, ο οποίος διοργανώνεται από το MIT. Κάθε χρόνο, συμβάλλει στην εκπαίδευση της νέας γενιάς επιστημόνων, παρέχοντας σε διεπιστημονικές φοιτητικές ομάδες τόσο το κίνητρο όσο και την κατάλληλη πλατφόρμα για τον σχεδιασμό, την ανάπτυξη και την παρουσίαση έργων που στοχεύουν στην επίλυση ζητημάτων ζωτικής σημασίας, ενώ παράλληλα οι συμμετέχοντες διαγωνίζονται σε παγκόσμιο επίπεδο.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2>Τα Έργα μας</h2>
+            <div class="projects-grid">
+                <!-- 2020 Project -->
+                <div class="project-card">
+                    <div class="project-year">2020</div>
+                    <div class="medal-badge silver"><i class="fas fa-medal"></i></div>
+                    <h3>Hippocrates</h3>
+                    <ul class="project-details">
+                        <li>Εξατομικευμένο διαγνωστικό τεστ με τη χρήση του φορητού εργαστηρίου Μοριακής Βιολογίας 2MoBiL</li>
+                        <li><strong>Στόχος:</strong> η εύρεση και ο ακριβής προσδιορισμός της απαιτούμενης δόσης στατινών, για κάθε ασθενή με καρδιαγγειακά νοσήματα</li>
+                    </ul>
+                </div>
+
+                <!-- 2021 Project -->
+                <div class="project-card">
+                    <div class="project-year">2021</div>
+                    <div class="medal-badge bronze"><i class="fas fa-medal"></i></div>
+                    <h3>PGasus</h3>
+                    <ul class="project-details">
+                        <li>Δημιουργία ειδικού αλληλουχητή MinION έπειτα από εστίαση σε γονίδια ηπατικών ενζύμων, υπεύθυνα για τον μεταβολισμό μεγάλου αριθμού φαρμάκων</li>
+                        <li><strong>Στόχος:</strong> ο περιορισμός σοβαρών ανεπιθύμητων παρενεργειών που συνοδεύουν μία φαρμακευτική αγωγή</li>
+                    </ul>
+                </div>
+
+                <!-- 2022 Project -->
+                <div class="project-card">
+                    <div class="project-year">2022</div>
+                    <div class="medal-badge bronze"><i class="fas fa-medal"></i></div>
+                    <h3>Paggaia</h3>
+                    <ul class="project-details">
+                        <li>Δημιουργία πρωτοκόλλου για την εφαρμογή μεθόδων γεωργίας ακριβείας</li>
+                        <li><strong>Στόχος:</strong> η βελτιστοποίηση της απόδοσης των καλλιεργειών, με τον ελάχιστο δυνατό αντίκτυπο προς το περιβάλλον</li>
+                    </ul>
+                </div>
+
+                <!-- 2023 Project -->
+                <div class="project-card">
+                    <div class="project-year">2023</div>
+                    <h3>Hyperion</h3>
+                    <ul class="project-details">
+                        <li>Κατασκευή ειδικού αισθητήρα που επεξεργάζεται δείγματα αίματος και ανιχνεύει καρκινικά κύτταρα</li>
+                        <li><strong>Στόχος:</strong> η έγκυρη και έγκαιρη διάγνωση του καρκίνου</li>
+                    </ul>
+                </div>
+
+                <!-- 2024 Project -->
+                <div class="project-card">
+                    <div class="project-year">2024</div>
+                    <div class="medal-badge gold"><i class="fas fa-medal"></i></div>
+                    <h3>LipOdyssey</h3>
+                    <ul class="project-details">
+                        <li>Ανάπτυξη μεθόδου στοχευμένης μεταφοράς εξειδικευμένων φαρμάκων και μορίων, σε καρκινικά κύτταρα HER2 θετικών όγκων του μαστού, μέσω λιποσωμάτων</li>
+                        <li><strong>Στόχος:</strong> η θεραπεία του HER2-θετικού καρκίνου του μαστού</li>
+                    </ul>
+                </div>
+
+                <!-- 2025 Project -->
+                <div class="project-card">
+                    <div class="project-year">2025</div>
+                    <div class="medal-badge gold"><i class="fas fa-medal"></i></div>
+                    <h3>ΑECHMΙ</h3>
+                    <ul class="project-details">
+                        <li>Δημιουργία βιολογικού συστήματος για την παρακολούθηση σε πραγματικό χρόνο πιθανών νέων βιοδεικτών για τη βακτηριακή σήψη</li>
+                        <li><strong>Στόχος:</strong> η έγκυρη και έγκαιρη διάγνωση της βακτηριακής σήψης</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section achievements">
+        <div class="container">
+            <h2>Επιτεύγματα & Διακρίσεις</h2>
+            <div class="achievements-content">
+                <div class="medals">
+                    <h3>Μετάλλια</h3>
+                    <div class="medals-grid">
+                        <div class="medal gold">
+                            <i class="fas fa-medal"></i>
+                            <p>2 Χρυσά Μετάλλια (2024 & 2025)</p>
+                        </div>
+                        <div class="medal silver">
+                            <i class="fas fa-medal"></i>
+                            <p>1 Ασημένιο Μετάλλιο (2020)</p>
+                        </div>
+                        <div class="medal bronze">
+                            <i class="fas fa-medal"></i>
+                            <p>2 Χάλκινα Μετάλλια (2021 & 2022)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nominations">
+                    <h3>Υποψιότητες & Διακρίσεις</h3>
+                    <ul>
+                        <li><strong>Nominatons:</strong> Inclusivity Award, Best Wiki Award</li>
+                        <li><strong>Λοιπές Διακρίσεις:</strong> iGEMers Prize, 1ο βραβείο στο Patras IQ (2023)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section team">
+        <div class="container">
+            <h2>Η Ομάδα μας</h2>
+            <p class="team-intro">Μια διεπιστημονική ομάδα 10 μελών από διάφορα τμήματα:</p>
+            <div class="departments-grid">
+                <div class="department">
+                    <i class="fas fa-dna"></i>
+                    <p>Βιολογικό</p>
+                </div>
+                <div class="department">
+                    <i class="fas fa-heartbeat"></i>
+                    <p>Ιατρική</p>
+                </div>
+                <div class="department">
+                    <i class="fas fa-flask"></i>
+                    <p>Χημικό</p>
+                </div>
+                <div class="department">
+                    <i class="fas fa-pills"></i>
+                    <p>Φαρμακευτική</p>
+                </div>
+                <div class="department">
+                    <i class="fas fa-code"></i>
+                    <p>Βιοπληροφορική</p>
+                </div>
+                <div class="department">
+                    <i class="fas fa-microchip"></i>
+                    <p>Μηχανικοί Ηλεκτρονικών Υπολογιστών</p>
+                </div>
+                <div class="department">
+                    <i class="fas fa-book"></i>
+                    <p>Μοριακή Βιολογία & Γενετική</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Engagement Section -->
+    <section class="section community">
+        <div class="container">
+            <h2>Κοινωνική Ευθύνη & Εκπαίδευση</h2>
+            <div class="community-content">
+                <p>Η ομάδα μας, θέτοντας ως προτεραιότητα τον κοινωνικό της αντίκτυπο και την ευαισθητοποίηση του ευρύτερου κοινού σχετικά με τον χρόνιο πόνο, διοργανώνει δράσεις και προωθεί το φετινό project μέσω συνεδρίων. Έχουμε ηχηρή παρουσία σε πανελλήνια συνέδρια, φοιτητικά και μη, ενώ συνεργαζόμαστε στενά με ειδικούς και συλλόγους ασθενών για τη βελτιστοποίησης της προσέγγισής μας.</p>
+
+                <p>Παράλληλα, επενδύουμε στη βιωματική μάθηση μέσω σχεδιασμού ενός προσβάσιμου εκπαιδευτικού επιτραπέζιου παιχνιδιού σχετικού με τον χρόνιο πόνο και τη συνθετική βιολογία.</p>
+
+                <p>Διοργανώνουμε επίσης δράσεις για ασθενείς και κοινωνικές ομάδες που πλήττονται από χρόνιο πόνο, με απώτερο στόχο την ενεργοποίησή τους και την ενημέρωσή τους σχετικά με την πρόληψη και την αντιμετώπιση των συμπτωμάτων του χρόνιου πόνου.</p>
+
+                <p>Σχεδιάζουμε ακόμη σειρές ανοικτών διαδικτυακών μαθημάτων για τον χρόνιο πόνο, τον καρκίνο και άλλες θεματικές σχετικές με τη βιολογία και το project, για την ενημέρωση του ευρύτερου αλλά και του ειδικού κοινού που επιθυμεί να διευρύνει τις σχετικές γνώσεις του.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Επικοινωνία</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p><a href="mailto:igem@upatras.gr">igem@upatras.gr</a></p>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Τηλέφωνα Επικοινωνίας</h3>
+                        <div class="phone-list">
+                            <p><strong>Χρυσάνθη Μπουσγολίτη:</strong> <a href="tel:+306931360355">6931360355</a></p>
+                            <p><strong>Βασιλική Παπαβασιλείου:</strong> <a href="tel:+306974657046">6974657046</a></p>
+                            <p><strong>Ασημίνα Παρασκευοπούλου:</strong> <a href="tel:+306907085152">6907085152</a></p>
+                            <p><strong>Δέσποινα Κουκουλάκη:</strong> <a href="tel:+306980647140">6980647140</a></p>
+                            <p><strong>Κέισι Ζανάι:</strong> <a href="tel:+306980818464">6980818464</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item social-contact">
+                        <h3>Ακολουθήστε μας</h3>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/igem.patras/" target="_blank" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/people/IGEM-Patras/100075403395362/?locale=el_GR" target="_blank" title="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/igem-patras-2025/posts/?feedView=all" target="_blank" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@igem_patras" target="_blank" title="TikTok">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <h3>Στείλε μας ένα μήνυμα</h3>
+                    <input type="text" placeholder="Όνομα" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Το μήνυμά σου" rows="5" required></textarea>
+                    <button type="submit" class="submit-btn">Αποστολή</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 iGEM Patras. Όλα τα δικαιώματα διατηρούνται.</p>
+            <p>Εργαστήριο Φαρμακογονιδιωματικής και Εξατομικευμένης Θεραπείας | Τμήμα Φαρμακευτικής | Πανεπιστήμιο Πατρών</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

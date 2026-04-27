@@ -1,0 +1,30 @@
+{
+  "name": "iGEM Patras 2026 Website",
+  "version": "1.0.0",
+  "description": "Professional website for iGEM Patras 2026 team",
+  "author": "iGEM Patras 2026",
+  "license": "MIT",
+  "keywords": [
+    "iGEM",
+    "synthetic-biology",
+    "healthcare",
+    "innovation",
+    "Patras",
+    "University of Patras"
+  ],
+  "homepage": "https://igem-patras.gr",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iGEM-Patras/iGEM-Patras-Main-Website"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "npx http-server"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
