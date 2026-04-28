@@ -419,16 +419,17 @@ body.dark-mode .intro-text h3 {
 .intro-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin-top: 1.5rem;
-    max-width: 1000px;
+    gap: 2.5rem;
+    margin-top: 2rem;
+    max-width: 1200px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .highlight-card {
     background: var(--bg-primary);
-    padding: 2.5rem 2rem;
+    padding: 3.5rem 2.5rem;
     border-radius: 15px;
     box-shadow: var(--shadow);
     text-align: center;
@@ -443,9 +444,9 @@ body.dark-mode .intro-text h3 {
 }
 
 .highlight-card i {
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: var(--secondary-color);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.8rem;
     display: inline-block;
     width: 100%;
     text-align: center;
@@ -453,14 +454,14 @@ body.dark-mode .intro-text h3 {
 
 .highlight-card h4 {
     color: var(--primary-color);
-    margin-bottom: 0.8rem;
-    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
     font-weight: 600;
 }
 
 .highlight-card p {
     color: var(--text-light);
-    font-size: 0.95rem;
+    font-size: 1.05rem;
 }
 
 /* ===========================
@@ -854,6 +855,10 @@ body.dark-mode .nominations h3 {
     padding: 100px 0;
 }
 
+.contact h2 {
+    color: var(--secondary-color);
+}
+
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1073,6 +1078,10 @@ body.dark-mode .nominations li {
 body.dark-mode .contact-item {
     background: rgba(106, 193, 240, 0.08);
     border-color: rgba(106, 193, 240, 0.2);
+}
+
+.contact-item h3 {
+    color: var(--secondary-color);
 }
 
 body.dark-mode .contact-item h3 {
