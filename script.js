@@ -62,29 +62,7 @@ function scrollToSection(sectionId) {
 // FORM SUBMISSION
 // ===========================
 
-const contactForm = document.querySelector('.contact-form');
-
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // Get form values
-    const name = contactForm.querySelector('input[type="text"]').value;
-    const email = contactForm.querySelector('input[type="email"]').value;
-    const message = contactForm.querySelector('textarea').value;
-    
-    // Validate form
-    if (!name || !email || !message) {
-        alert('Παρακαλώ συμπληρώστε όλα τα πεδία');
-        return;
-    }
-    
-    // In a real application, you would send this to a server
-    // For now, we'll just show a success message
-    alert(`Ευχαριστούμε ${name}! Το μήνυμά σας έχει λαμβάνεται. Θα σας επικοινωνήσουμε σύντομα.`);
-    
-    // Reset form
-    contactForm.reset();
-});
+// Contact form removed - using contact information section only
 
 // ===========================
 // SCROLL ANIMATION
@@ -309,7 +287,7 @@ function applyTranslations(lang) {
         if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
             element.placeholder = text;
         } else {
-            element.textContent = text;
+            element.innerHTML = text;
         }
     });
 }

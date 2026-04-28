@@ -403,7 +403,7 @@ body.dark-mode .intro-text h3 {
 
 .intro-highlights {
     display: grid;
-    gap: 2rem;
+    gap: 2.5rem;
     align-items: start;
 }
 
@@ -418,7 +418,12 @@ body.dark-mode .intro-text h3 {
 
 .intro-cards {
     display: grid;
-    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 1.5rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .highlight-card {
@@ -441,7 +446,9 @@ body.dark-mode .intro-text h3 {
     font-size: 3rem;
     color: var(--secondary-color);
     margin-bottom: 1.5rem;
-    display: block;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
 }
 
 .highlight-card h4 {
@@ -511,12 +518,21 @@ body.dark-mode .competition-content p {
     max-width: 900px;
     margin: 0 auto;
     text-align: justify;
+    background: rgba(15, 28, 46, 0.97);
+    border: 2px solid rgba(74, 159, 216, 0.4);
+    border-radius: 15px;
+    padding: 3rem 3.5rem;
+    box-shadow: 0 8px 32px rgba(74, 159, 216, 0.15);
 }
 
 .competition-content p {
     font-size: 1.05rem;
     line-height: 1.9;
-    color: var(--text-light);
+    color: #ffffff;
+}
+
+body.dark-mode .competition-content p {
+    color: #e0e0e0;
 }
 
 /* ===========================
