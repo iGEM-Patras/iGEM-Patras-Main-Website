@@ -1131,10 +1131,12 @@ body.dark-mode .department {
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
+        margin-left: 1rem; /* add horizontal spacing from the language button */
     }
 
     .theme-toggle {
         margin-left: 0.5rem;
+        gap: 0.5rem;
     }
 
     .navbar-brand {
